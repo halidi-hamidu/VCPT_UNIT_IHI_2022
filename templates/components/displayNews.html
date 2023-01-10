@@ -1,0 +1,58 @@
+{% load static %}
+<div class="news_section">
+  <div class="container-fluid" style="padding: 0px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="inner_section">
+          <div class="title" >
+            <h1 data-aos="slide-right">Our News</h1>
+          </div>
+          <div class="news_list">
+            <!-- <h4>The Latest News</h4> -->
+            <!-- <ul>
+              <li>new 1</li>
+              <li>new 2</li>
+              <li>new 3</li>
+              <li>new 4</li>
+              <li>new 5</li>
+              <li>new 6</li>
+            </ul> -->
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static './images/images.jpg' %}" class="d-block w-100" >
+                  <div class="carousel-caption d-none d-md-block" style="background-color: #fff;color: #000;">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static './images/Facility.jpeg' %}" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: #fff;color: #000;">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static './images/vcptu_bg.jpg' %}" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block" style="background-color: #fff;color: #000;">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

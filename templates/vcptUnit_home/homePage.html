@@ -1,0 +1,28 @@
+{% extends  '../baseTemplates/websiteBase.html' %}
+{% load static %}
+{% block title %} home{% endblock %}
+{% block content %}
+{% include '../components/heroSectionWithVideo.html' %}
+
+<!-- {% include '../components/vcptuQuotes.html' %} -->
+
+
+
+
+
+{% include '../components/messageFromDirector.html' %}
+{% include '../components/whatWeOfferComponent.html' %}
+
+{% include '../components/stdForumCounter.html' %}
+{% include '../components/publication.html' %}
+
+{% include '../components/displayNews.html' %}
+{% include '../components/staff.html' %}
+<!-- {% include '../components/contacts.html' %} -->
+{% include '../components/partners.html' %}
+<!-- {% include '../components/map.html' %} -->
+
+
+{% include '../components/footer.html' %}
+
+{% endblock %}

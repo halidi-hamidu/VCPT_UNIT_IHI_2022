@@ -1,0 +1,76 @@
+{% extends  '../baseTemplates/websiteBase.html' %}
+{% load static %}
+{% block title %} Team {% endblock %}
+{% block content %}
+<div class="team_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" >
+                <h1>VECTOR CONTROL PROJECT TEST UNIT</h1>
+                <h1>TEAM</h1>
+                <div class="team_message" data-aos="slide-up">
+                    <p><q>
+                        Between 2017 and 2021 the unit has undergone rapid expansion and now has outstanding research facilities and a team of 15 highly motivated research staff: PhD (4), MSc (8), BSc (4) with a growing number of female scientists (5). In addition to service contracts, the unit is actively engaged in applied research, with current research grants in the field of product development or bioassay development funded by many international donors and universities.
+                    </q></p>
+            </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="team_gallarey">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="inner_section">
+                    <div class="image_section">
+                        <img src="{% static './images/Dr-Sarah-Moore-VCPTU-335x335-1.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="description">
+                        <h5>Dr. Sarah Moore</h5>
+                        <div class="line"></div>
+                        <p>Head of unit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="inner_section">
+                    <div class="image_section">
+                        <img src="{% static './images/Jason-Moore-VCPTU.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="description">
+                        <h5>Jason Moore</h5>
+                        <div class="line"></div>
+                        <p>Test Facility Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="inner_section">
+                    <div class="image_section">
+                        <img src="{% static './images/Emmanuel-Mbuba-Og.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="description">
+                        <h5>Emmanuel Mbuba</h5>
+                        <div class="line"></div>
+                        <p>Insectary Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="inner_section">
+                    <div class="image_section">
+                        <img src="{% static './images/Dr-Sarah-Moore-VCPTU-335x335-1.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="description">
+                        <h5>Dr. Sarah Moore</h5>
+                        <div class="line"></div>
+                        <p>Haed of unit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include '../components/footer.html' %}
+
+{% endblock %}
