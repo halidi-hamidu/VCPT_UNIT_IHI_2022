@@ -127,7 +127,13 @@ a:active {
   background-color: var(--greenColor);
 }
 /* .navigation_section */
-
+.navigation_section{
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: var(--whiteColor);
+  opacity: 1;
+}
 .navigation_section .nav-item{
  
   padding: 5px 20px;
@@ -152,13 +158,21 @@ a:active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   transition-duration: 15s;
 }
+.navigation_section .nav-item .nav-link{
+  color:var(--blackColor)
+}
 .navigation_section .nav-item .nav-link:active{
   background-color: var(--whiteColor);
   border-bottom: 1px var(--solidLIne) var(--greenColor);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 }
-
+.navigation_section .inner{
+  padding: 0px 20px;
+  display: var(--displayFlex);
+  justify-content: space-between;
+  color:var(--greenColor);
+}
 
 
 /* herro section start here */
@@ -177,6 +191,7 @@ a:active {
   transform: translateX(-50%) translateY(-50%);
   background:linear-gradient(rgba(0, 0, 0, 0),rgba(138, 130, 130, 0)), url(placeholder.jpg) no-repeat;
   background-size: cover;
+  margin-top: 230px;
  
   }
   #hero .front_text .item{
@@ -185,12 +200,12 @@ a:active {
     justify-content: center;
     align-items: center;
     height: 36vh;
-    padding-top: 180px;
+    padding-top: 170px;
     text-align: var(--center);
     color: var(--whiteColor);
   }
   #hero .front_text .item h1{
-    font-size:80px;
+    font-size:49px;
     font-weight:var(--fontBold);
     text-align: var(--center);
     font-family: var(--fontFamily);
@@ -302,10 +317,12 @@ video {
   display: var(--displayFlex);
 }
 .what_we_offer_section .services .services_item{
- padding: 30px 50px;
+ padding: 30px 20px;
  text-align: var(--center);
  background-color: var(--greyColor1);
  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+ width: 100%;
+ margin: 3px;
 }
 .what_we_offer_section .services:nth-child(2){
  /* padding: 50px 0px;
@@ -390,6 +407,7 @@ border-radius: 100%;
 .news_section {
   background-color: var(--whiteColor);
   overflow-x: hidden;
+  z-index: 0;
 
 }
 .news_section .inner_section{
@@ -414,6 +432,7 @@ border-radius: 100%;
   padding:0px;
   color: var(--blackColor);
   width: 60%;
+  z-index: 0;
   
 }
 .news_section .inner_section .news_list img{
