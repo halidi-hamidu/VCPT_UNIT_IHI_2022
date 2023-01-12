@@ -450,27 +450,27 @@ border-radius: 100%;
   padding: 10px 50px;
 }
 
-/* publication_section */
+/* publication_section_at_home_page */
 
-.publication_section{
+.publication_section_at_home_page{
   background-color: var(--grayColor);
   padding: 100px 20px;
   overflow-x: hidden;
   width: 100%;
 }
-.publication_section .inner_section,
-.publication_section .inner_section .publication{
+.publication_section_at_home_page .inner_section,
+.publication_section_at_home_page .inner_section .publication{
   display: var(--displayFlex);
   justify-content: space-between;
 
 }
-.publication_section .inner_section .publication{
+.publication_section_at_home_page .inner_section .publication{
   background-color: var(--whiteColor);
   margin: 10px;
   padding: 30px 40px;
   text-align: justify;
 }
-.publication_section .inner_section .publication .icon{
+.publication_section_at_home_page .inner_section .publication .icon{
 padding: 5px;
 }
 /* .staff_section */
@@ -670,14 +670,13 @@ color:var(--blackColor)
 
 /* .hero_section_in_about_page */
 .hero_section_in_about_page{
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url('../images/vcptu_bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('../images/vcptu_bg.jpg');
   background-position: var(--center);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   padding: 250px;
   color: var(--whiteColor);
-  opacity: 0.9;
   font-weight: bold;
   background-color: var(--blackColor);
   text-align: var(--center);
@@ -980,7 +979,7 @@ div.event::after {
 /* .publication_section */
 
 .publication_section{
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/publication.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url('../images/publication.jpg');
   background-position: var(--center);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1003,14 +1002,19 @@ div.event::after {
 .list_of_publication_in_data_table .inner_section{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
   padding: 30px 10px; 
-  z-index: -1;
+  font-weight: bold;
+  z-index: -4;
+}
+.list_of_publication_in_data_table .inner_section h1, p{
+  
+  font-weight: bold;
 }
 a.page-link{
   z-index: -1;
 }
 /* . project_section */
 .project_section{
-  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/publication.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/facility.jpeg');
   background-position: var(--center);
   background-repeat: no-repeat;
   background-size: cover;
