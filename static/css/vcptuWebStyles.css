@@ -1008,5 +1008,35 @@ div.event::after {
 a.page-link{
   z-index: -1;
 }
+/* . project_section */
+.project_section{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/publication.jpg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 200px;
+  color: var(--whiteColor);
+  font-weight: bold;
+  background-color: var(--blackColor);
+}
 
+.project_section .inner_section{
+  text-align: var(--center);
+}
+
+.list_of_project_in_data_table{
+  padding: 90px 0px;
+  background-color: var(--greyColor1);
+  border-radius: 20px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+.list_of_project_in_data_table .inner_section{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+  padding: 30px 10px; 
+  z-index: -1;
+}
+a.page-link{
+  z-index: -1;
+}
 /* media query secion */

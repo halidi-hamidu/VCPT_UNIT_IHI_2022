@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'vcptUnit_service',
     'vcptUnit_facility',
     'vcptUnit_publication',
+    'vcptUnit_projects',
     # 'vcptUnit_news',
     # 'vcptUnit_reports',
     'vcptUnit_team',
