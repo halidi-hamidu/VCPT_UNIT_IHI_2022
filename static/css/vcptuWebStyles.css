@@ -976,4 +976,20 @@ div.event::after {
 .team_gallarey .inner_section .description{
   padding: 20px;
 }
+
+/* .publication_section */
+
+.publication_section{
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url('../images/publication.jpg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 250px;
+  color: var(--whiteColor);
+  opacity: 0.9;
+  font-weight: bold;
+  background-color: var(--blackColor);
+  text-align: var(--center);
+}
 /* media query secion */

@@ -8,6 +8,8 @@
   <title>vcptu - {% block title %} {% endblock %}</title>
   <link rel="stylesheet" href="{% static './css/vcptuBoostrap5.css' %}">
   <link rel="stylesheet" href="{% static './css/vcptuAos.css' %}">
+  <link href="{% static '././datatables/dataTables.bootstrap4.min.css' %}" rel="stylesheet">
+
   <link rel="stylesheet" href="{% static './css/vcptuWebStyles.css' %}">
   
 </head>
@@ -23,6 +25,8 @@
   
   <script src="{% static './js/pooper.js' %}" ></script>
 <script src="{% static './js/boostrap5.js' %}"></script>
+<script src="{% static './datatables/jquery.dataTables.min.js' %}"></script>
+<script src="{% static './datatables/dataTables.bootstrap4.min.js' %}"></script>
 <script src="{% static './js/vcptuAos.js' %}"></script>
 <script>
   AOS.init();
