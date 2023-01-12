@@ -5,6 +5,6 @@ from . import views
 
 app_name = 'vcptUnit_news'
 
-# urlpatterns = [
-#     # path('', views.homePage, name='homePage')
-# ]
+urlpatterns = [
+    path('', views.newsPage, name='newsPage')
+]

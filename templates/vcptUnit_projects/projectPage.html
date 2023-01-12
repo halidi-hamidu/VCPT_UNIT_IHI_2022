@@ -1,0 +1,75 @@
+{% extends  '../baseTemplates/websiteBase.html' %}
+{% load static %}
+{% block title %} projects {% endblock %}
+{% block content %}
+<div class="project_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1" data-aos="zoom-in">
+                <div class="inner_section">
+                    <h1>Our Projects</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="list_of_project_in_data_table">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner_section">
+                    Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner_section">
+                    <table id="project_list" class="table table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>projects</th>
+                                <th>Year</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                            <td>1</td>
+                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
+                            <td>2022</td>
+                        </tr>
+                           <tr>
+                            <td>1</td>
+                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
+                            <td>2022</td>
+                            
+                        </tr>
+                           <tr>
+                            <td>1</td>
+                            <td>halidi ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
+                            <td>2022</td>
+                            
+                        </tr>
+                           <tr>
+                            <td>1</td>
+                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
+                            <td>2022</td>
+                            
+                        </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include '../components/footer.html' %}
+
+{% endblock %}

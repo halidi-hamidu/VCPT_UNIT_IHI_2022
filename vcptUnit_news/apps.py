@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class VcptunityPublicationConfig(AppConfig):
+class VcptunitNewsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'vcptUnity_publication'
+    name = 'vcptUnit_news'

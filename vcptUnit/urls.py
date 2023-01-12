@@ -25,8 +25,10 @@ urlpatterns = [
     path('about-vcptu', include('vcptUnit_aboutUs.urls', namespace='vcptUnit_aboutus')),
     path('vcptu-services', include('vcptUnit_service.urls', namespace='vcptUnit_service')),
     path('vcptu-facility', include('vcptUnit_facility.urls', namespace='vcptUnit_facility')),
-    # path('vcptu-news', include('vcptUnit_news.urls', namespace='vcptUnit_news')),
-    # path('vcptu-publication', include('vcptUnit_publication.urls', namespace='vcptUnit_publication')),
+    path('vcptu-publication', include('vcptUnit_publication.urls', namespace='vcptUnit_publication')),
+    path('vcptu-projects', include('vcptUnit_projects.urls', namespace='vcptUnit_projects')),
+    path('vcptu-accreditation', include('vcptUnit_accreditations.urls', namespace='vcptUnit_accreditations')),
+    path('vcptu-news', include('vcptUnit_news.urls', namespace='vcptUnit_news')),
     # path('vcptu-reports', include('vcptUnit_reports.urls', namespace='vcptUnit_reports')),
     path('vcptu-team', include('vcptUnit_team.urls', namespace='vcptUnit_team')),
 ]

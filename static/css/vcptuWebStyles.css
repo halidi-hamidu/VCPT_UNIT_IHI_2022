@@ -127,7 +127,13 @@ a:active {
   background-color: var(--greenColor);
 }
 /* .navigation_section */
-
+.navigation_section{
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background-color: var(--whiteColor);
+  opacity: 1;
+}
 .navigation_section .nav-item{
  
   padding: 5px 20px;
@@ -152,13 +158,21 @@ a:active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   transition-duration: 15s;
 }
+.navigation_section .nav-item .nav-link{
+  color:var(--blackColor)
+}
 .navigation_section .nav-item .nav-link:active{
   background-color: var(--whiteColor);
   border-bottom: 1px var(--solidLIne) var(--greenColor);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 }
-
+.navigation_section .inner{
+  padding: 0px 20px;
+  display: var(--displayFlex);
+  justify-content: space-between;
+  color:var(--greenColor);
+}
 
 
 /* herro section start here */
@@ -177,6 +191,7 @@ a:active {
   transform: translateX(-50%) translateY(-50%);
   background:linear-gradient(rgba(0, 0, 0, 0),rgba(138, 130, 130, 0)), url(placeholder.jpg) no-repeat;
   background-size: cover;
+  margin-top: 230px;
  
   }
   #hero .front_text .item{
@@ -185,12 +200,12 @@ a:active {
     justify-content: center;
     align-items: center;
     height: 36vh;
-    padding-top: 180px;
+    padding-top: 170px;
     text-align: var(--center);
     color: var(--whiteColor);
   }
   #hero .front_text .item h1{
-    font-size:80px;
+    font-size:49px;
     font-weight:var(--fontBold);
     text-align: var(--center);
     font-family: var(--fontFamily);
@@ -302,10 +317,12 @@ video {
   display: var(--displayFlex);
 }
 .what_we_offer_section .services .services_item{
- padding: 30px 50px;
+ padding: 30px 20px;
  text-align: var(--center);
  background-color: var(--greyColor1);
  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+ width: 100%;
+ margin: 3px;
 }
 .what_we_offer_section .services:nth-child(2){
  /* padding: 50px 0px;
@@ -390,6 +407,7 @@ border-radius: 100%;
 .news_section {
   background-color: var(--whiteColor);
   overflow-x: hidden;
+  z-index: 0;
 
 }
 .news_section .inner_section{
@@ -414,6 +432,7 @@ border-radius: 100%;
   padding:0px;
   color: var(--blackColor);
   width: 60%;
+  z-index: 0;
   
 }
 .news_section .inner_section .news_list img{
@@ -431,27 +450,76 @@ border-radius: 100%;
   padding: 10px 50px;
 }
 
-/* publication_section */
+/* section_for_news  page*/
+.section_for_news{
+  margin-top: 20px;
+}
+.section_for_news .inner_section{
+  background-color: var(--whiteColor);
+  border: 3px var(--solidLIne) var(--grayColor);
+  border-radius: 10px;
+  box-shadow: rgba(253, 242, 242, 0.959) 0px 2px 8px 0px;
+}
+.section_for_news .inner_section .image_section{
+  opacity: 1;
+}
+.section_for_news .inner_section .news_description{
+  margin-top: -70px;
+  background-color: var(--blackColor);
+  padding: 20px 10px;
+  opacity:0.8;
+  color: var(--whiteColor);
+  z-index: 100;
+}
+.section_for_news button{
+  border: 0px var(--solidLIne) var(--whiteColor);
+  background-color: var(--none);
+  color: var(--blackColor);
+  font-size: 20px;
+  padding: 0px 20px;
+  outline:var(--none);
+}
+.section_for_news .other_news{
 
-.publication_section{
+  padding: 20px 0px;
+}
+.section_for_news .other_news .inner_section{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+.section_for_news .other_news .inner_section .description{
+  padding: 10px;
+}
+.section_for_news .other_news .inner_section .image_section{
+  width: 190px;
+}
+.section_for_news button img{
+  width: 30px;
+  padding-top: 10px;
+}
+
+/* publication_section_at_home_page */
+
+.publication_section_at_home_page{
   background-color: var(--grayColor);
   padding: 100px 20px;
   overflow-x: hidden;
   width: 100%;
 }
-.publication_section .inner_section,
-.publication_section .inner_section .publication{
+.publication_section_at_home_page .inner_section,
+.publication_section_at_home_page .inner_section .publication{
   display: var(--displayFlex);
   justify-content: space-between;
 
 }
-.publication_section .inner_section .publication{
+.publication_section_at_home_page .inner_section .publication{
   background-color: var(--whiteColor);
   margin: 10px;
   padding: 30px 40px;
   text-align: justify;
 }
-.publication_section .inner_section .publication .icon{
+.publication_section_at_home_page .inner_section .publication .icon{
 padding: 5px;
 }
 /* .staff_section */
@@ -651,14 +719,13 @@ color:var(--blackColor)
 
 /* .hero_section_in_about_page */
 .hero_section_in_about_page{
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url('../images/vcptu_bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('../images/vcptu_bg.jpg');
   background-position: var(--center);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   padding: 250px;
   color: var(--whiteColor);
-  opacity: 0.9;
   font-weight: bold;
   background-color: var(--blackColor);
   text-align: var(--center);
@@ -672,27 +739,39 @@ color:var(--blackColor)
 }
 .vcptu_history_section{
   padding: 100px 0px;
-  background-color: var(--blackColor2);
+  background-color: var(--whiteColor);
  
 }
 .vcptu_history_section .inner_section{
-  background-color: var(--blackColor);
+  background-color: var(--whiteColor);
   padding: 50px 20px;
   border-top-right-radius: 100px;
   border-right:5px solid var(--greenColor);
   border-left: 5px solid var(--greenColor);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  color: var(--whiteColor);
+  color: var(--blackColor);
   /* opacity: 0.2; */
 }
 
 /* mission_section */
+.mission_section{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)), url('../images/about.jpeg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 10px 50px;
+}
 .mission_section .inner_section{
-  background-color: var(--blackColor);
-  opacity: 0.9;
-  color: var(--whiteColor);
-  padding: 150px 50px;
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
   text-align: justify;
+  opacity:1;
+  width: 99.9%;
+  height:auto;
+  padding: 50px 40px;
+  border-radius: 5px;
+
 }
 .mission_section:hover .inner_section:hover{
   background-color: var(--blackColor);
@@ -708,22 +787,25 @@ color:var(--blackColor)
 
 .method_training_models_lab_practise{
   padding:100px 0px;
-  background-color: var(--blackColor);
-  color: var(--whiteColor);
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
 }
 .method_training_models_lab_practise .inner h5{
  text-align: center;
  padding: 20px 0px;
+ color: var(--blackColor);
+ text-decoration: var(--none);
 }
 .method_training_models_lab_practise .inner .icon {
  text-align: center;
  border: 2px var(--solidLIne) var(--greenColor);
- width: 30%;
+ width: 20%;
  margin: 0px auto;
  border-radius: 100%;
+ background-color: var(--blackColor);
 }
 .method_training_models_lab_practise .inner{
-background-color: #191919;
+background-color: var(--whiteColor);
 opacity: 0.8;
 border: 0px var(--solidLIne) var(--whiteColor);
 padding: 20px 30px;
@@ -733,16 +815,18 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  text-align: justify;
 }
 .method_training_models_lab_practise .inner .descriptions .readmore{
+  display: block;
  text-decoration: var(--none);
  /* color: #000; */
- background-color: var(--blackColor);
+ background-color: var(--whiteColor);
  padding: 3px 10px;
  border-radius: 20px;
- color: var(--whiteColor);
+ color: var(--blackColor);
  display: var(--block);
  text-align: center;
 }
 .method_training_models_lab_practise .inner .descriptions .readmore:hover{
+  display: block;
  text-decoration: var(--none);
  /* color: #000; */
  background-color: var(--blackColor);
@@ -751,9 +835,8 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  color: var(--whiteColor);
  display: var(--block);
  text-align: center;
- border: 1px var(--solidLIne) var(--greenColor);
- 
 }
+
 /* .strategy_section */
 .strategy_section .inner_section{
   background-color:var(--blackColor2);
@@ -777,33 +860,10 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   color: var(--whiteColor);
   font-family: var(--fontFamily);
   padding: 100px 60px;
-  opacity: 0.96;
+
 }
 .services_section .inner_section{
   padding: 80px 70px;
-}
-.services_section .items{
-  display: var(--displayFlex);
-  justify-content: var(--spaceBetweeen);
-}
-.services_section .service_list{
-  background-color: var(--blackColor2);
-  opacity: 1;
-  margin: 10px 20px;
-  padding: 0px 40px;
-  color: var(--whiteColor);
-  border: 0px var(--solidLIne) var(--blackColor2);
-  text-align: var(--center);
-  width: 100%;
-  height: 390px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.services_section .service_list .image_section{
-  border-radius: 100%;
-  width: 50%;
-  /* height: 100%; */
-  border: 10px var(--solidLIne) var(--greenColor);
-  margin: 20px auto;
 }
 
 
@@ -882,11 +942,19 @@ div.event::after {
 }
 
 .hero_in_facility_page{
-  background-color: var(--blackColor);
-  padding: 200px 20px;
-  text-align: var(--center);
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('../images/news.jpeg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 190px 20px;
   color: var(--whiteColor);
+  /* opacity: 0.5; */
+  text-align: var(--center);
+  font-weight: var(--fontBold);
+  /* height: 300px; */
 }
+  
 .facility_section{
   padding: 100px 10px;
 }
@@ -957,4 +1025,101 @@ div.event::after {
 .team_gallarey .inner_section .description{
   padding: 20px;
 }
+
+/* .publication_section */
+
+.publication_section{
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url('../images/publication.jpg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 200px;
+  color: var(--whiteColor);
+  font-weight: bold;
+  background-color: var(--blackColor);
+}
+
+.publication_section .inner_section{
+  text-align: var(--center);
+}
+.list_of_publication_in_data_table{
+  padding: 90px 0px;
+  background-color: var(--greyColor1);
+  border-radius: 20px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+.list_of_publication_in_data_table .inner_section{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+  padding: 30px 10px; 
+  font-weight: bold;
+  z-index: -4;
+}
+.list_of_publication_in_data_table .inner_section h1, p{
+  
+  font-weight: bold;
+}
+.page-link{
+  z-index: -1;
+
+}
+/* . project_section */
+.project_section{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/facility.jpeg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 200px;
+  color: var(--whiteColor);
+  font-weight: bold;
+  background-color: var(--blackColor);
+}
+
+.project_section .inner_section{
+  text-align: var(--center);
+}
+
+.list_of_project_in_data_table{
+  padding: 90px 0px;
+  background-color: var(--greyColor1);
+  border-radius: 20px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+.list_of_project_in_data_table .inner_section{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+  padding: 30px 10px; 
+  z-index: -1;
+}
+
+/* accreditation_section */
+.accreditation_section{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/accreditation2l.jpg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 200px;
+  color: var(--whiteColor);
+  font-weight: bold;
+  background-color: var(--blackColor);
+}
+
+.accreditation_section .inner_section{
+  text-align: var(--center);
+}
+
+.list_of_accreditation_in_data_table{
+  padding: 90px 0px;
+  background-color: var(--greyColor1);
+  border-radius: 20px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+.list_of_accreditation_in_data_table .inner_section{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+  padding: 30px 10px; 
+  z-index: -1;
+}
+
+
 /* media query secion */

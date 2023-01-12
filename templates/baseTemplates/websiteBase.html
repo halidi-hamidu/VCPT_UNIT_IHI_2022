@@ -8,6 +8,11 @@
   <title>vcptu - {% block title %} {% endblock %}</title>
   <link rel="stylesheet" href="{% static './css/vcptuBoostrap5.css' %}">
   <link rel="stylesheet" href="{% static './css/vcptuAos.css' %}">
+  <link rel="stylesheet" href="{% static './datatables/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static './datatables/dataTables.bootstrap5.min.css' %}">
+
+  
+
   <link rel="stylesheet" href="{% static './css/vcptuWebStyles.css' %}">
   
 </head>
@@ -23,6 +28,11 @@
   
   <script src="{% static './js/pooper.js' %}" ></script>
 <script src="{% static './js/boostrap5.js' %}"></script>
+<!-- for data tabales -->
+<script src="{% static './datatables/jquery.dataTables.js' %}"></script>
+<script src="{% static './datatables/jquery.dataTables.min.js' %}"></script>
+<script src="{% static './datatables/dataTables.bootstrap5.min.js' %}"></script>
+
 <script src="{% static './js/vcptuAos.js' %}"></script>
 <script>
   AOS.init();
@@ -45,6 +55,13 @@
          }
      }
  </script>
+<script>
+     $(document).ready(function () {
+     $('#project_list').DataTable();
+     $('#publication_list').DataTable();
+     $('#accreditation_list').DataTable();
+ });
+</script>
 </body>
 </html>
 <!-- =================FADE -->
