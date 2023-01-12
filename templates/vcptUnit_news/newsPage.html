@@ -1,0 +1,102 @@
+{% extends  '../baseTemplates/websiteBase.html' %}
+{% load static %}
+{% block title %} news {% endblock %}
+{% block content %}
+<div class="accreditation_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1" data-aos="zoom-in">
+                <div class="inner_section" data-aos = 'zoom-out-up'>
+                    <h1>VCPTU NEWS</h1>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section_for_news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2>Latest news</h2>
+                <div class="inner_section" data-aos = 'zoom-out-up'>
+                   
+                    <div class="image_section">
+                        <img src="{% static './images/publication.jpg' %}" alt="" class="img-fluid">
+                    </div>
+                    <div class="news_description">
+                        <h5>latest covid 19 Treatments </h5>
+                    </div>
+                    <div class="accordion" id="accordionExample" >
+                        <div class="accordion_section">
+                          <h2 class="accordion-header" id="headingOne" style="display: flex;justify-content: space-between;">
+                            <button class=""  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Read more
+                            </button>
+                            <button class=""  type="button" >
+                              <img src="{% static './images/heart.png' %}" alt=""  class="img-fluid" style="">
+                            </button>
+                            <button class=""  type="button" >
+                                <img src="{% static './images/like.png' %}" alt="" class="img-fluid" style="width: 30px;padding-top: 10px;">
+                            </button>
+                            <button class=""  type="button" >
+                                <img src="{% static './images/download.png' %}" alt="" class="img-fluid" style="width: 30px;padding-top: 10px;">
+                                
+                            </button>
+                            <button class=""  type="button" >
+                                <img src="{% static './images/subscribe.png' %}" alt="" class="img-fluid" style="width: 30px;padding-top: 10px;">
+
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                <div class="other_news" >
+                    <a href="">
+
+                        <div class="inner_section" data-aos = 'zoom-out-up'>
+                            <div class="image_section">
+                                <img src="{% static './images/project.jpg' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, corporis.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="inner_section" data-aos = 'zoom-out-up' >
+                        <div class="image_section" >
+                            <img src="{% static './images/facility.jpeg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, corporis.</p>
+                        </div>
+                    </div>
+                    <div class="inner_section" data-aos = 'zoom-out-up' >
+                        <div class="image_section" >
+                            <img src="{% static './images/images.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, corporis.</p>
+                        </div>
+                    </div>
+                    <div class="inner_section" data-aos = 'zoom-out-up' >
+                        <div class="image_section" >
+                            <img src="{% static './images/vcptu_bg.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, corporis.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include '../components/footer.html' %}
+
+{% endblock %}
