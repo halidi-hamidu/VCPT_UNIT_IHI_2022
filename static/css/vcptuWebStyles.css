@@ -1042,4 +1042,34 @@ div.event::after {
   z-index: -1;
 }
 
+/* accreditation_section */
+.accreditation_section{
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('../images/accreditation2l.jpg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 200px;
+  color: var(--whiteColor);
+  font-weight: bold;
+  background-color: var(--blackColor);
+}
+
+.accreditation_section .inner_section{
+  text-align: var(--center);
+}
+
+.list_of_accreditation_in_data_table{
+  padding: 90px 0px;
+  background-color: var(--greyColor1);
+  border-radius: 20px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+.list_of_accreditation_in_data_table .inner_section{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+  padding: 30px 10px; 
+  z-index: -1;
+}
+
+
 /* media query secion */
