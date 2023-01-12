@@ -893,11 +893,19 @@ div.event::after {
 }
 
 .hero_in_facility_page{
-  background-color: var(--blackColor);
-  padding: 200px 20px;
-  text-align: var(--center);
+  background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('../images/news.jpeg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 190px 20px;
   color: var(--whiteColor);
+  /* opacity: 0.5; */
+  text-align: var(--center);
+  font-weight: var(--fontBold);
+  /* height: 300px; */
 }
+  
 .facility_section{
   padding: 100px 10px;
 }
