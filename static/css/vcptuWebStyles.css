@@ -964,13 +964,21 @@ div.event::after {
 
 /* .team_section */
 .team_section{
-  background-color: var(--blackColor);
+  /*  */
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url('../images/VCPTU-TEAM.jpg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
   padding: 200px 0px;
-  text-align: var(--center);
   color: var(--whiteColor);
+  font-weight: bold;
+
+  text-align: var(--center);
+
 }
-.team_section .team_message{
-  padding: 14px 300px 0px 300px;
+.team_message{
+  padding: 100px;
 }
 .team_gallarey{
   padding: 60px 0px;
