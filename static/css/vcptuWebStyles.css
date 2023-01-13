@@ -1133,7 +1133,7 @@ div.event::after {
 .contact_section_1 .flex_section .inner_item_left{
   display: var(--displayFlex);
   justify-content: space-between;
-  background-color: var(--whiteColor);
+  background-color: transparent;
   margin: 5px 20px;
   border: 0px var(--solidLIne) var(--whiteColor);
   padding: 20px;
@@ -1141,11 +1141,15 @@ div.event::after {
   width: 100%;
 }
 .contact_section_1 .flex_section .inner_item_left .image_section{
-  width: 30%;
-  background-color: var(--whiteColor);
+  width: 10%;
+  height: 10%;
+  /* background-color: var(--whiteColor); */
   border: 0px var(--solidLIne) var(--whiteColor);
   border-radius: 100%;
   padding: 30px 10px;
+}
+.contact_section_1 .flex_section .inner_item_left .image_section img{
+  width: 100%;
 }
 .contact_section_1 .flex_section .inner_item_left .description{
   width: 100%;
@@ -1153,6 +1157,8 @@ div.event::after {
   border: 0px var(--solidLIne) var(--whiteColor);
   color: var(--blackColor);
   padding-top: 10px;
+  opacity: 0.8;
+
   text-align: var(--center);
 }
 .contact_section_1 .flex_section .form_section{
