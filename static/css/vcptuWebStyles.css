@@ -654,18 +654,12 @@ padding: 5px;
 /* hero_section_in_contact_page */
 .hero_section_in_contact_page{
   background-color: var(--blackColor);
-  padding: 250px 30px;
+  padding: 250px 300px;
   opacity: 1;
-}
-.overlay_section_in_contact .inner_section{
-  background-color: var(--blackColor);
-  padding: 100px 50px;
-  margin-top: -250px;
   color: var(--whiteColor);
+  text-align: var(--center);
 }
-.overlay_section_in_contact .inner_section .line_segments{
- width: 15%;
-}
+
 
 /* contacts */
 
@@ -702,47 +696,6 @@ text-align: var(--center);
 }
 
 /* stay_in_touch_section */
-.stay_in_touch_section{
-  margin-top: 100px;
-}
-.stay_in_touch_section .inner_section{
-   background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/vcptu_bg.jpg');
-  background-position: var(--center);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  padding: 250px;
-  color: var(--whiteColor);
-  opacity: 0.7;
-  color: var(--whiteColor);
-  font-weight: bold;
-  /* font-size: 30px; */
-}
-.stay_in_touch_section .form_section{
-  background-color: var(--greyColor1);
-  padding: 0px 20px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.stay_in_touch_section .form_section form{
-width: 100%;
-padding: 10px 0px;
-}
-.stay_in_touch_section .form_section form input, textarea{
-width: 100%;
-padding: 10px;
-outline: var(--none);
-border: 0.1px var(--solidLIne) var(--greyColor);
-margin: 6px 0px;
-border-radius: 10px;
-}
-.stay_in_touch_section .form_section form label{
-padding: 5px;
-color:var(--whiteColor)
-}
-.stay_in_touch_section .form_section form button{
-padding: 5px 40px;
-color:var(--blackColor)
-}
 
 /* .hero_section_in_about_page */
 .hero_section_in_about_page{
@@ -817,12 +770,7 @@ color:var(--blackColor)
   background-color: var(--whiteColor);
   color: var(--blackColor);
 }
-.method_training_models_lab_practise .inner h5{
- text-align: center;
- padding: 20px 0px;
- color: var(--blackColor);
- text-decoration: var(--none);
-}
+
 .method_training_models_lab_practise .inner .icon {
  text-align: center;
  border: 2px var(--solidLIne) var(--greenColor);
@@ -863,6 +811,14 @@ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
  display: var(--block);
  text-align: center;
 }
+.method_training_models_lab_practise .inner h5{
+  text-align: center;
+  padding: 20px 0px;
+  color: var(--blackColor);
+  text-decoration: var(--none);
+  text-transform: uppercase;
+  text-decoration: var(--none);
+ }
 
 /* .strategy_section */
 .strategy_section .inner_section{
@@ -1148,5 +1104,79 @@ div.event::after {
   z-index: -1;
 }
 
+.contact_section_1{
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/facility.jpeg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 90px 0px;
+  color: var(--whiteColor);
+  opacity: 0.7;
+  color: var(--whiteColor);
+  font-weight: bold;
+}
+.contact_section_1 .flex_section{
+  display: var(--displayFlex);
+  justify-content: space-between;
+  border: 0px var(--solidLIne) var(--whiteColor);
+
+}
+.contact_section_1 .flex_section .inner_item_left{
+  display: var(--displayFlex);
+  justify-content: space-between;
+  background-color: var(--whiteColor);
+  margin: 5px 20px;
+  border: 0px var(--solidLIne) var(--whiteColor);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+.contact_section_1 .flex_section .inner_item_left .image_section{
+  width: 30%;
+  background-color: var(--whiteColor);
+  border: 0px var(--solidLIne) var(--whiteColor);
+  border-radius: 100%;
+  padding: 30px 10px;
+}
+.contact_section_1 .flex_section .inner_item_left .description{
+  width: 100%;
+  background-color: var(--whiteColor);
+  border: 0px var(--solidLIne) var(--whiteColor);
+  color: var(--blackColor);
+  padding-top: 10px;
+  text-align: var(--center);
+}
+.contact_section_1 .flex_section .form_section{
+  background-color: var(--whiteColor);
+  padding: 20px 30px;
+  color: var(--blackColor);
+  border-radius: 10px;
+  margin: 5px;
+  width: 60%;
+
+}
+.contact_section_1 .flex_section .form_section input,
+.contact_section_1 .flex_section .form_section label,
+.contact_section_1 .flex_section .form_section textarea{
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+  margin: 5px;
+}
+.contact_section_1 .flex_section .form_section input,
+
+.contact_section_1 .flex_section .form_section textarea{
+  border: 1px var(--solidLIne) var(--greyColor);
+  border-radius: 10px;
+
+}
+.contact_section_1 .form_section button{
+  background-color: var(--whiteColor);
+  outline: var(--none);
+  border: 1px var(--solidLIne) var(--greyColor);
+  padding: 10px 50px;
+}
 
 /* media query secion */

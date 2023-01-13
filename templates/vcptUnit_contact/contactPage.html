@@ -2,13 +2,77 @@
 {% load static %}
 {% block title %} contacts{% endblock %}
 {% block content %}
-{% include '../components/heroSectionContactPage.html' %}
-{% include '../components/overlaysection.html' %}
+<div class="hero_section_in_contact_page">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner_section">
+                    <div class="inner_section">
+                        <h1>VCPTU CONTACTS</h1>
+                        <p>Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate standardized metrics after resource-leveling processes. Objectively pursue diverse catalysts for change for interoperable meta-services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact_section_1">
+    <div class="container-fluid">
+       <div class="row">
+        <div class="col-md-12">
+            <div class="flex_section">
+                <div class="inner_section">
+                    <div class="inner_item_left"  data-aos='zoom-out-up'>
+                        <div class="image_section">
+                            <img src="{% static './images/location.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <h2>ADDRESS</h2>
+                            <p>Bagamoyo Branch,</p>
+                            <p>Off Chuguni Road - Bagamoyo</p> 
+                            <P>P.O. Box 74, Bagamoyo - Tanzania.</P>
+                        </div>
+                    </div>
+                    <div class="inner_item_left"  data-aos='zoom-out-up'>
+                        <div class="image_section">
+                            <img src="{% static './images/phone.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <h2>PHONE</h2>
 
+                            <p>+255 232 440065</p>
+                        </div>
+                    </div>
+                    <div class="inner_item_left"  data-aos='zoom-out-up'>
+                        <div class="image_section">
+                            <img src="{% static './images/messages.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <h2>EMAIL US</h2>
 
-{% include '../components/contactSection.html' %}
+                            <p> VCPTUmgt@ihi.or.tz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_section">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <input type="text" placeholder="Firstname">
+                        <input type="email" placeholder="email">
+                        <label for="messages">types your messages here!</label>
+                        <textarea name="" id="" cols="0" rows="10" >
+                        
+                        </textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+<!--  -->
 
-{% include '../components/stayInTouch.html' %}
 
 
 {% include '../components/footer.html' %}
