@@ -1,28 +1,45 @@
 {% load static %}
 <!-- navigation section -->
 <div class="navigation_section">
- <div class="container">
+ <div class="container-fluid">
   <div class="row" >
     <div class="col-md-12">
       <div class="inner">
-        <div class="logo_section" style="width: 30%;height: 4%;">
+        <div class="logo_section" style="width: 26%;height: 4%;">
           <a href="#">
-            <img src="{% static './images/logo.png' %}" alt="" class="img-fluid ">
+            <img src="{% static './images/logo.png' %}" alt="" class="img-fluid " style="width: 100%;">
           </a>
          </div>
-         <div class="address_section " style="padding-top: 15px;margin-right: -30px;float: right;width: 40%;">
-          <img src="{% static './images/vcptu_address.JPG' %}" alt="" class="img-fluid">
+         <div class="address_section " style="padding:0px 0px;margin-right:0px;float: right;display: flex;;">
+          <div class="item1" style="display: flex;">
+            <div class="image_section">
+              <img src="{% static './images/greenLocation.png' %}" alt="" class="img-fluid" style="width: 60px;padding: 20px 10px;">
+            </div>
+            <div class="description" style="padding-top:15px;color: black;">
+              <h6>Dar Es Salaam Office</h6>
+              <span>#5 ifakara Street, Plot 463 Mikocheni</span>
+            </div>
+          </div>
+          <div class="item1" style="display: flex;">
+            <div class="image_section">
+              <img src="{% static './images/greenLocation.png' %}" alt="" class="img-fluid" style="width: 60px;padding: 20px 10px;">
+            </div>
+            <div class="description" style="padding-top: 15px;color: black;">
+              <h6>Dar Es Salaam Office</h6>
+              <span>#5 ifakara Street, Plot 463 Mikocheni</span>
+            </div>
+          </div>
          </div>
       </div>
     </div>
   </div>
  </div>
+
 <div class="container" >
   <div class="row">
     <div class="col-md-12">
-      <div class="item" >
+      <div class="item" style="border-top: 1px solid black;">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
            <!-- <div class="logo_section" >
             <a class="navbar-brand" href="#">
               <img src="{% static './images/logo.png' %}" alt="" class="img-fluid">
@@ -93,7 +110,7 @@
                 </li>
               </ul> 
             </div>
-          </div>
+
         </nav>
       </div>
     </div>
