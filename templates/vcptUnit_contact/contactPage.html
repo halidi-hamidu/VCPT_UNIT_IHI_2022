@@ -2,6 +2,10 @@
 {% load static %}
 {% block title %} contacts{% endblock %}
 {% block content %}
+
+
+
+<!-- 
 <div class="hero_section_in_contact_page">
     <div class="container-fluid">
         <div class="row">
@@ -71,10 +75,72 @@
        </div>
     </div>
 </div>
-<!--  -->
 
 
+ -->
 
+
+ <div class="contact_section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="inner_section">
+                <h1>VCPTU CONTACTS</h1>
+                <p>Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate standardized metrics after resource-leveling processes. Objectively pursue diverse catalysts for change for interoperable meta-services.</p>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="inner_sections">
+                    <div class="contacts_details">
+                        <div class="items" data-aos="zoom-out-up">
+                            <div class="image_section">
+                                <img src="{% static './images/location.png' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <h2>ADDRESS</h2>
+                                <p>Bagamoyo Branch,</p>
+                                <p>Off Chuguni Road - Bagamoyo</p> 
+                                <P>P.O. Box 74, Bagamoyo - Tanzania.</P>
+                            </div>
+                        </div>
+                        <div class="items" data-aos="zoom-out-up">
+                            <div class="image_section">
+                                <img src="{% static './images/phone.png' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <h2>PHONE</h2>
+    
+                                <p>+255 232 440065</p>
+                            </div>
+                        </div>
+                        <div class="items" data-aos="zoom-out-up">
+                            <div class="image_section">
+                                <img src="{% static './images/messages.png' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <h2>EMAIL US</h2>
+    
+                                <p> VCPTUmgt@ihi.or.tz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_section" data-aos="zoom-in-up">
+                        <h1>Get in Touch with VCPTU</h1>
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <input type="text" name="" id="" placeholder="Fullname">
+                            <input type="email" name="" id="" placeholder="Email address">
+                            <input type="text" name="messages" id="" placeholder="Type Your Messages">
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
 {% include '../components/footer.html' %}
 
 {% endblock %}
