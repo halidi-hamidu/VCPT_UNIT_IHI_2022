@@ -7,3 +7,11 @@ def teamPage(request):
 
     }
     return render(request, template_name, context)
+
+
+def detailView(request):
+    template_name = 'vcptUnit_team/detailView.html'
+    context = {
+
+    }
+    return render(request, template_name, context)
