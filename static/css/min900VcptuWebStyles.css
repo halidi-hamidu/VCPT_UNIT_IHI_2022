@@ -136,14 +136,14 @@ a:active {
 }
 .navigation_section .nav-item{
  
-  padding: 5px 20px;
+  padding: 5px 11px;
   margin: 0px 1px;
 }
 .navigation_section .container-fluid{
   display: var(--displayFlex);
 }
 .navigation_section .logo_section{
-  width: 250px;
+  width: 150px;
 }
 /* .navigation_section .navbar{
   background-color: var(--greyColor1);
