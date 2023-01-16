@@ -6,3 +6,9 @@ def newsPage(request):
     context = {
     }
     return render(request, template_name, context)
+
+def detailaViewPage(request):
+    template_name = 'vcptUnit_news/detailaViewPage.html'
+    context = {
+    }
+    return render(request, template_name, context)

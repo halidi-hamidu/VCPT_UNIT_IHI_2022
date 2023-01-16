@@ -2,8 +2,8 @@
 {% load static %}
 {% block title %} news {% endblock %}
 {% block content %}
-<div class="accreditation_section">
-    <div class="container">
+<!-- <div class="accreditation_section">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 offset-md-1" data-aos="zoom-in">
                 <div class="inner_section" data-aos = 'zoom-out-up'>
@@ -13,12 +13,12 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <div class="section_for_news">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h2>Latest news</h2>
+            <div class="col-md-10 offset-md-1">
+                <!-- <h2>Latest news</h2> -->
                 <div class="inner_section" data-aos = 'zoom-out-up'>
                    
                     <div class="image_section">
@@ -57,41 +57,80 @@
                         </div>
                     </div>
                 <div class="other_news" >
-                    <a href="">
+                   
 
+                        <a href="{% url 'vcptUnit_news:detailaViewPage' %}" class="link">
+                            <div class="inner_section" data-aos = 'zoom-out-up'>
+                                <div class="image_section">
+                                    <img src="{% static './images/project.jpg' %}" alt="" class="img-fluid">
+                                </div>
+                                <div class="description">
+                                    <h3>News Heading</h3>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
+                                    </p>
+                                    <p class="read_more">Read more</p>
+                                </div>
+                            </div>
+                        </a>
+                    
+                    <a href="" class="link">
+                        <div class="inner_section" data-aos = 'zoom-out-up' >
+                            <div class="image_section" >
+                                <img src="{% static './images/images.jpg' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <h3>News Heading</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
+                                </p>
+                                <p class="read_more">Read more</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="link">
+                        <div class="inner_section" data-aos = 'zoom-out-up' >
+                            <div class="image_section" >
+                                <img src="{% static './images/vcptu_bg.jpg' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <h3>News Heading</h3>
+    
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
+                                </p>
+                                <p class="read_more">Read more</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="link">
+                        <div class="inner_section" data-aos = 'zoom-out-up' >
+                            <div class="image_section" >
+                                <img src="{% static './images/images.jpg' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <h3>News Heading</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
+                                </p>
+                               
+                                <p class="read_more">Read more</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="link">
                         <div class="inner_section" data-aos = 'zoom-out-up'>
                             <div class="image_section">
                                 <img src="{% static './images/project.jpg' %}" alt="" class="img-fluid">
                             </div>
                             <div class="description">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, corporis.</p>
+                                <h3>News Heading</h3>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
+                                
+                                </p>
+                                <p class="read_more">Read more</p>
                             </div>
+                            
                         </div>
                     </a>
-                    <div class="inner_section" data-aos = 'zoom-out-up' >
-                        <div class="image_section" >
-                            <img src="{% static './images/facility.jpeg' %}" alt="" class="img-fluid">
-                        </div>
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, corporis.</p>
-                        </div>
-                    </div>
-                    <div class="inner_section" data-aos = 'zoom-out-up' >
-                        <div class="image_section" >
-                            <img src="{% static './images/images.jpg' %}" alt="" class="img-fluid">
-                        </div>
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, corporis.</p>
-                        </div>
-                    </div>
-                    <div class="inner_section" data-aos = 'zoom-out-up' >
-                        <div class="image_section" >
-                            <img src="{% static './images/vcptu_bg.jpg' %}" alt="" class="img-fluid">
-                        </div>
-                        <div class="description">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, corporis.</p>
-                        </div>
-                    </div>
                 </div>
                 </div>
             </div>
