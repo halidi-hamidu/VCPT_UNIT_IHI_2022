@@ -700,7 +700,18 @@ a:active {
     border-radius: 5px;
   
   }
-  .mission_section:hover .inner_section:hover{
+  .mission_section .inner_section_mission{
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    text-align: justify;
+    opacity:1;
+    width: 99.9%;
+    height:428px;
+    padding: 60px 50px;
+    border-radius: 5px;
+  
+  }
+  .mission_section:hover .inner_section:hover, .inner_section_mission:hover{
     background-color: var(--blackColor);
     color: var(--whiteColor);
     opacity: 1;
@@ -1881,7 +1892,18 @@ text-align: var(--center);
   border-radius: 5px;
 
 }
-.mission_section:hover .inner_section:hover{
+.mission_section .inner_section_mission{
+  background-color: var(--whiteColor);
+  color: var(--blackColor);
+  text-align: justify;
+  opacity:1;
+  width: 99.9%;
+  height:428px;
+  padding: 60px 50px;
+  border-radius: 5px;
+
+}
+.mission_section:hover .inner_section:hover, .inner_section_mission:hover{
   background-color: var(--blackColor);
   color: var(--whiteColor);
   opacity: 1;
