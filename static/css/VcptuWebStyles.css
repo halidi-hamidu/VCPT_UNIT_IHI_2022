@@ -2384,10 +2384,8 @@ div.event::after {
   padding: 10px;
 }
 .detail_view_section{
-  padding: 100px;
-  position: sticky;
-  top: 80px;
-  
+  padding: 30px 100px;
+  height: 100vh;
 }
 .detail_view_section .inner_section{
   display: var(--displayFlex);
