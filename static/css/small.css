@@ -727,12 +727,14 @@
   }
   
   .method_training_models_lab_practise .inner .icon {
-   text-align: center;
-   border: 2px var(--solidLIne) var(--greenColor);
-   width: 20%;
-   margin: 0px auto;
-   border-radius: 100%;
-   background-color: var(--blackColor);
+    text-align: center;
+    border: 2px var(--solidLIne) var(--greenColor);
+    width: 40%;
+    padding: 20px;
+    /* height: 70px; */
+    margin: 0px auto;
+    border-radius: 100%;
+    background-color: var(--blackColor);
   }
   .method_training_models_lab_practise .inner{
   background-color: var(--whiteColor);
@@ -1079,65 +1081,77 @@
     outline: var(--greenColor);
   }
   /* contact_section */
-   /* contact_section page */
-.contact_section .contacts_details{
-  background-color: var(--whiteColor);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  width: 100%;
-  height: 300px;
-  text-align: var(--center);
-  margin: 30px 0px;
-  padding: 60px 0px;
+  .contact_section .contacts_details{
+    background-color: var(--whiteColor);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    height: 250px;
+    text-align: var(--center);
+    margin: 10px 0px;
+    padding: 20px 0px;
 
-}
-.contact_section .contacts_details .image_section{
-  background-color: var(--whiteColor);
-  width: 90px;
-  height: 90px;
-  margin: auto;
-}
-.contact_section .contacts_details .image_section img{
-  background-color: var(--whiteColor);
-  width: 100%;
-  height: 100%;
-}
-.contact_section .image_section{
-display: none;
+  }
+  .contact_section .contacts_details .image_section{
+    background-color: var(--whiteColor);
+    width: 35px;
+    height: 35px;
+    margin: auto;
+  }
+  .contact_section .contacts_details .image_section img{
+    background-color: var(--whiteColor);
+    width: 100%;
+    height: 100%;
+  }
+  .contact_section .col-md-6{
+    margin-top: 40px;
+  }
+.contact_section .col-md-6 .image_section{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('../images/vcptu_bg.jpg');
+  background-position: var(--center);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  padding: 225px;
+  color: var(--whiteColor);
+  font-weight: bold;
+  background-color: var(--blackColor);
+  text-align: var(--center);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+/* height: 40px; */
 }
 .contact_section .image_section img{
 width: 100%;
 height: 100%;
 }
-.contact_section .col-md-6{
-margin: 0px;
-padding: 0px;
-}
-.contact_section .inner_sections .form_section{
-  background-color: var(--whiteColor);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  width: 100%;
-  padding: 20px 30px;
+  .contact_section .inner_sections .form_section{
+    background-color: var(--whiteColor);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 100%;
+    padding: 225px;
 
-}
-.contact_section .inner_sections .form_section input, textarea{
-  display: var(--block);
-  width: 100%;
-  padding: 2px 5px;
-  margin: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border: 1pc var(--solidLIne) var(--whiteColor);
-  outline: none;
-  resize: none;
+    padding: 10px 30px;
+
+  }
+  .contact_section .inner_sections .form_section input, textarea{
+    display: var(--block);
+    width: 100%;
+    padding: 2px 5px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1pc var(--solidLIne) var(--whiteColor);
+    outline: none;
+    resize: none;
 
 
-}
-.contact_section .inner_sections .form_section button{
-  
-  padding: 10px 20px;
-  margin: 8px;
-  border: 1px var(--solidLIne) var(--greenColor);
-  border-radius: 10px;
-}
+  }
+  .contact_section .inner_sections .form_section button{
+    
+    padding: 10px 50px;
+    margin: 8px;
+    border: 1px var(--solidLIne) var(--greenColor);
+    border-radius: 10px;
+  }
   .detail_view_section{
     padding: 30px 100px;
     height: 100vh;
