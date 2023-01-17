@@ -1224,7 +1224,7 @@ height: 100%;
   }
   .navigation_section .nav-item{
   
-    padding: 5px 20px;
+    padding: 1px 25px;
   
   }
   .navigation_section .container-fluid{
@@ -1235,7 +1235,7 @@ height: 100%;
   }
   .navigation_section .container,
   .navigation_section .container .col-md-12{
-    width: 100%;
+    width: 99%;
     padding: 0px;
     margin: 0px;
     margin: 0px auto;
@@ -1273,7 +1273,7 @@ height: 100%;
   
   }
   .navigation_section .inner{
-    padding: 10px 80px;
+    padding: 1px 80px;
     display: var(--displayFlex);
     justify-content: space-between;
     color:var(--greenColor);
@@ -1365,13 +1365,13 @@ height: 100%;
   .footer_section{
     background-color: var(--blackColor);
     color: var(--whiteColor);
-    padding: 80px 60px;
+    padding: 10px 60px;
     font-family: var(--fontFamilys);
     opacity: 0.95;
   
   }
   .footer_section .col-md-4 .item .address{
-    padding: 20px 0px;
+    padding: 10px 0px;
     font-size: 23px;
   }
   .footer_section .col-md-4 .item .address p a{
@@ -1388,7 +1388,7 @@ height: 100%;
   }
   .quotes_section .quotes_item{
     background-color: var(--whiteColor);
-    padding: 90px;
+    padding: 10px;
     border-radius: 20px 90px 20px 90px;
     border: 10px var(--solidLIne) var(--greenColor);
     border-top-style: var(--none) ;
@@ -1950,6 +1950,7 @@ height: 100%;
   }
   .method_training_models_lab_practise .inner .descriptions{
    text-align: justify;
+   height: 200px;
   }
   .method_training_models_lab_practise .inner .descriptions .readmore{
     display: block;
@@ -2552,7 +2553,7 @@ height: 100%;
   .footer_section{
     background-color: var(--blackColor);
     color: var(--whiteColor);
-    padding: 80px 60px;
+    padding: 10px 60px;
     font-family: var(--fontFamilys);
     opacity: 0.95;
   
