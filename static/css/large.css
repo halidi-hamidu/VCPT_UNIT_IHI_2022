@@ -696,9 +696,11 @@ border-radius: 10px;
   padding: 20px 30px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-decoration: var(--none);
+
   }
   .method_training_models_lab_practise .inner .descriptions{
    text-align: justify;
+   height: 200px;
   }
   .method_training_models_lab_practise .inner .descriptions .readmore{
     display: block;

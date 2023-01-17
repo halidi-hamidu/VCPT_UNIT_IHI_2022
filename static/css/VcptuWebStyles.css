@@ -763,7 +763,6 @@ border-radius: 10px;
   padding: 20px 30px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-decoration: var(--none);
-  height: 200px;
 
   }
   .method_training_models_lab_practise .inner .descriptions{
@@ -1954,7 +1953,7 @@ height: 100%;
   }
   .method_training_models_lab_practise .inner .descriptions{
    text-align: justify;
-   height: 210px;
+   height: 215px;
   }
   .method_training_models_lab_practise .inner .descriptions .readmore{
     display: block;
@@ -2557,7 +2556,7 @@ height: 100%;
   .footer_section{
     background-color: var(--blackColor);
     color: var(--whiteColor);
-    padding: 10px 60px;
+    padding: 80px 60px;
     font-family: var(--fontFamilys);
     opacity: 0.95;
   
@@ -3143,7 +3142,7 @@ height: 100%;
   }
   .method_training_models_lab_practise .inner .descriptions{
    text-align: justify;
-   height: 200px;
+   height: 215px;
   }
   .method_training_models_lab_practise .inner .descriptions .readmore{
     display: block;

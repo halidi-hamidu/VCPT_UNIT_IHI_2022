@@ -745,6 +745,7 @@
   }
   .method_training_models_lab_practise .inner .descriptions{
    text-align: justify;
+   height: 215px;
   }
   .method_training_models_lab_practise .inner .descriptions .readmore{
     display: block;
