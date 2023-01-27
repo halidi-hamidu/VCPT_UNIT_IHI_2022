@@ -1,4 +1,4 @@
-{% extends  '../baseTemplates/websiteBase.html' %}
+{% extends '../baseTemplates/websiteBase.html' %}
 {% load static %}
 {% block title %} contacts{% endblock %}
 {% block content %}
@@ -80,14 +80,14 @@
  -->
 
 
- <div class="contact_section">
+<div class="contact_section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-            <div class="inner_section" style="border:0.4px solid #eee;padding:40px 30px">
-                <h1>VCPTU CONTACTS</h1>
-                <p>Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate standardized metrics after resource-leveling processes. Objectively pursue diverse catalysts for change for interoperable meta-services.</p>
-            </div>
+                <div class="inner_section" style="border:0.4px solid #eee;padding:40px 30px">
+                    <h1>VCPTU CONTACTS</h1>
+                    <p>Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate standardized metrics after resource-leveling processes. Objectively pursue diverse catalysts for change for interoperable meta-services.</p>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -100,12 +100,10 @@
                         <div class="description">
                             <h2>ADDRESS</h2>
                             <p>Bagamoyo Branch,</p>
-                            <p>Off Chuguni Road - Bagamoyo</p> 
+                            <p>Off Chuguni Road - Bagamoyo</p>
                             <P>P.O. Box 74, Bagamoyo - Tanzania.</P>
                         </div>
                     </div>
-                   
-                    
                 </div>
             </div>
             <div class="col-md-4">
@@ -152,7 +150,7 @@
                             {% csrf_token %}
                             <input type="text" name="" id="" placeholder="Fullname">
                             <input type="email" name="" id="" placeholder="Email address">
-                            <textarea name="" id="" cols="30" rows="5"  placeholder="Type Your Messages"></textarea>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Type Your Messages"></textarea>
                             <!-- <input type="text" name="messages" id=""> -->
                             <button type="submit">Send</button>
                         </form>
@@ -161,7 +159,7 @@
             </div>
         </div>
     </div>
- </div>
+</div>
 {% include '../components/footer.html' %}
 
 {% endblock %}
