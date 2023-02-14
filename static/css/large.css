@@ -864,6 +864,7 @@ border-radius: 10px;
     background-color: var(--whiteColor);
     padding: 10px 20px;
     text-align:justify;
+    height: 200px;
   }
   
   /* .team_section */

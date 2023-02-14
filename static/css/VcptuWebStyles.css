@@ -931,6 +931,7 @@ border-radius: 10px;
     background-color: var(--whiteColor);
     padding: 10px 20px;
     text-align:justify;
+    height: 120px;
   }
   
   /* .team_section */
@@ -2090,6 +2091,7 @@ height: 100%;
     background-color: var(--whiteColor);
     padding: 10px 20px;
     text-align:justify;
+    height: 120px;
   }
   
   /* .team_section */
@@ -3257,6 +3259,7 @@ height: 100%;
     background-color: var(--whiteColor);
     padding: 10px 20px;
     text-align:justify;
+    height: 120px;
   }
   
   /* .team_section */
