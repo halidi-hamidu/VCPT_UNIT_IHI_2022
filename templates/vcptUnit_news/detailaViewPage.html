@@ -17,28 +17,20 @@
 <div class="section_for_news">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-10 offset-md-1">
+            <div class="col-md-8 offset-md-2">
                 <!-- <h2>Latest news</h2> -->
                 <div class="inner_section" data-aos='zoom-out-up'>
                     <div class="image_section">
-                        <img src="{% static './images/project.jpg' %}" alt="" class="img-fluid">
+                        <img src="{{get_news_or_event_detail.event_image.url }}" alt="" class="img-fluid">
                     </div>
                     <div class="news_description">
-                        <h3>News Heading</h3>
+                        
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
-                        </p>
+                        <p>{{get_news_or_event_detail.description | safe | truncatewords:2}}</p>
 
                     </div>
                     <div class="more_description">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sapiente blanditiis earum porro. Libero minima recusandae id nisi impedit vero nemo aliquam dignissimos molestiae, quod, atque quisquam consequatur illum distinctio ab tempora autem dicta fugit in beatae omnis. Asperiores voluptates corporis, dignissimos quod enim eveniet optio iure aliquam ipsam alias illum nihil tenetur accusamus delectus voluptatum at veritatis neque in quo ratione beatae consequatur, accusantium possimus! Harum officia veniam pariatur iste ratione ducimus est, mollitia dolor quo nam, esse voluptatibus molestias. Impedit tenetur cupiditate atque repellat voluptatum dolorem ab velit ratione facilis maiores, qui a iure eligendi iste quas? Cupiditate?
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate necessitatibus, animi excepturi placeat reprehenderit vel ipsum rem, suscipit laudantium omnis explicabo sint, sit id culpa! Quae eaque rerum reiciendis repudiandae?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quaerat corporis distinctio eligendi repellat ipsum accusantium neque magni, porro, consequatur totam? Nesciunt quisquam qui dicta, itaque iste odit id earum!</p>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ipsa neque esse quaerat, alias excepturi voluptas consequatur cupiditate eos molestias ab consectetur, at, blanditiis veritatis recusandae laudantium deserunt eius error hic adipisci harum. Provident harum sunt nostrum unde fuga animi, voluptates consequatur officia tempore eligendi? Ullam, asperiores nam amet veniam voluptates doloribus labore alias corrupti dolore laborum provident et laudantium sapiente quisquam veritatis accusamus. Voluptate dolore nostrum minus corporis alias velit perspiciatis, temporibus delectus libero veniam dolor maxime porro reprehenderit quam eius reiciendis quaerat veritatis non officiis sunt perferendis error.</p>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo deleniti incidunt fuga ipsum quo! Distinctio debitis quia accusamus beatae exercitationem unde hic odit, quam accusantium, quae recusandae molestias mollitia quaerat porro placeat non necessitatibus voluptatum et alias commodi excepturi! Iste in quisquam nisi repellat sit suscipit tenetur modi iusto itaque?</p>
+                        <p>{{get_news_or_event_detail.description | safe }}</p>
                     </div>
 
                 </div>

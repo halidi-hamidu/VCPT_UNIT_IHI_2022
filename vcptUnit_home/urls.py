@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from vcptUnit_home import views
 
 # urlsPatterns
 
