@@ -15,7 +15,7 @@ class VcptuNews(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     
     class Meta:
-        verbose_name_plural = 'VCPTU News'
+        verbose_name_plural = 'VCPTU-News'
 
     def __str__(self):
         return f'{str(self.description[3:-4])} '
