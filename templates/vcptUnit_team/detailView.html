@@ -8,15 +8,22 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="inner_section">
-                        <div class="image_section">
-                            <h1 style="background-color: white;padding-bottom: 20px;color:green;">Selemani Mmbaga</h1>
-                            <img src="{% static './images/selemani Mmbaga.png' %}" alt="" class="img-fluid">
+                        {% if get_staff_detail %}
+                       
+                        <div class="col-md-4">
+                            <div class="image_section"  style="width:350px;">
+                            <h1 style="background-color: white;padding-bottom: 10px;color:green;">{{ get_staff_detail.staff_name }}</h1>
+                            <img src="{{ get_staff_detail.staff_image.url  }}" alt="" class="img-fluid">
                         </div>
-                        <div class="description">
-                            <h2>Data Manager</h2>
-                            <p style="padding: 10px 0px;line-height: 30px;">Selemani Mmbaga has a software development background and also skills in data science. He holds a BSc Degree in Information Systems and Network Engineering from St. Joseph University in Tanzania. Currently, he is working as a Research Officer with the Data Systems Unit and also with Data Science Capacity Building project at Ifakara Health Institute.</p>
-                            <p style="padding: 10px 0px;line-height: 30px;">Mr. Mmbaga began his data management and analysis career at IHI in 2012 as an intern and later on in 2015, after obtaining his first degree, he was employed as Data Officer. He has extensive experience in database designing and management in (MSAcess, MySQL Server, Apache). Mr. Mmbaga also has experience in software development (web and mobile applications), and data analysis using different platforms such as Stata and R.</p>
+                    </div>
+                        <div class="col-md-8">
+                            <div class="description">
+                                <h2>{{ get_staff_detail.professional_or_title }}</h2>
+                                <p style="padding: 10px 0px;line-height: 30px;"> {{ get_staff_detail.profile_descriptions | safe  }}</p>
+                                {% comment %} <p style="padding: 10px 0px;line-height: 30px;">Mr. Mmbaga began his data management and analysis career at IHI in 2012 as an intern and later on in 2015, after obtaining his first degree, he was employed as Data Officer. He has extensive experience in database designing and management in (MSAcess, MySQL Server, Apache). Mr. Mmbaga also has experience in software development (web and mobile applications), and data analysis using different platforms such as Stata and R.</p> {% endcomment %}
+                            </div>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>

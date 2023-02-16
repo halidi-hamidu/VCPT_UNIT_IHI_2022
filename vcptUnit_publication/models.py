@@ -3,10 +3,11 @@ import uuid
 from ckeditor.fields import RichTextField
 from django.contrib.auth.models import User
 
-# Create your models here.
+# # Create your models here.
 class VcptuPublications(models.Model):
     id = models.UUIDField(
         primary_key=True, default=uuid.uuid4, editable=False, unique=True)
+    publication_year = models.PositiveIntegerField( null=True, blank=True)
     description = RichTextField()
     posted_by = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='publcation_content_posted_by')

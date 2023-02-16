@@ -21,132 +21,26 @@
 <div class="team_gallarey">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up'  >
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/Dr -saraah.png' %}" alt="" class="img-fluid">
-                    </div>
-                    <div class="description">
-                        <h5>Dr. Sarah Moore</h5>
-                        
-                        <p>Head of unit</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up' >
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/Jason-Moore-VCPTU.png' %}" alt="" class="img-fluid">
-                        
-                    </div>
-                    <div class="description">
-                        <h5>Jason Moore</h5>
-                        
-                        <p>Test Facility Manager</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up'  >
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/EmmanuelMbuba_original web.png' %}" alt="" class="img-fluid">
-                    </div>
-                    <div class="description">
-                        <h5>Emmanuel Mbuba</h5>
-                        
-                        <p>Insectary Manager</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up' >
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/Chausiku.jpg' %}" alt="" class="img-fluid">
-                    </div>
-                    <div class="description">
-                        <h5>Chausiku Mwinyimvua</h5>
-                        
-                        <p>Technician</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up'>
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/Edga-Mbeyella.jpg' %}" alt="" class="img-fluid">
-                    </div>
-                    <div class="description">
-                        <h5>Edgar Mbeyela</h5>
-                        
-                        <p>Technician</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up'>
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/Dickson-Kobes.jpg' %}" alt="" class="img-fluid">
-                    </div>
-                    <div class="description">
-                        <h5>Dickson Kobe</h5>
-                        
-                        <p>Technician</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up'>
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/Ester-Gitetaa.jpg' %}" alt="" class="img-fluid">
-                    </div>
-                    <div class="description">
-                        <h5>Ester Giteta</h5>
-                        
-                        <p>Administrative Officer</p>
-                    </div>
-                </div>
-            </div>
-           
-            <!-- <a > -->
-                <div class="col-md-3 mt-5"  data-aos='zoom-out-up'>
-                    <a href="{% url 'vcptUnit_team:detailView' %}" class="link" style="text-decoration: none;color: black;">
-                        <div class="inner_section">
-                            <div class="image_section">
-                                <img src="{% static './images/staff/Mmbaga-Sele.jpg' %}" alt="" class="img-fluid">
-                            </div>
-                            <div class="description">
-                                <h5>Selemani Mmbaga</h5>
-                                
-                                <p>Data Manager</p>
-                            </div>
+            {% if get_all_vcptu_staff %}
+            {% for staff in get_all_vcptu_staff %}
+            
+                <div class="col-md-3 mt-5"  data-aos='zoom-out-up'  >
+                    <div class="inner_section">
+                      <a href="{% url 'vcptUnit_team:detailView' staff.id  %}" style ="text-decoration:none;color:#000;">
+                        <div class="image_section">
+                            <img src="{{staff.staff_image.url }}" alt="" class="img-fluid">
                         </div>
-                    </a>
+                        <div class="description">
+                            <h5>{{staff.staff_name }}</h5>
+                            
+                            <p>{{ staff.professional_or_title }}</p>
+                        </div>
+                       </a>
+                  </div>
                 </div>
-            <!-- </a> -->
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up'>
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/Swai-Kyeba.jpg' %}" alt="" class="img-fluid">
-                    </div>
-                    <div class="description">
-                        <h5>Swai Kyeba</h5>
-                        
-                        <p>Research Officer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mt-5"  data-aos='zoom-out-up'>
-                <div class="inner_section">
-                    <div class="image_section">
-                        <img src="{% static './images/staff/Ritha-Kidyala.jpg'%}" alt="" class="img-fluid">
-                    </div>
-                    <div class="description">
-                        <h5>Swai Kyeba</h5>
-                        
-                        <p>Administrative Officer</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
+            {% endif %}
+
         </div>
     </div>
 </div>

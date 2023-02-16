@@ -7,5 +7,5 @@ app_name = 'vcptUnit_team'
 
 urlpatterns = [
    path('', views.teamPage, name='teamPage'),
-   path('staff-detail', views.detailView, name='detailView'),
+   path('staff-detail/<str:id>/', views.detailView, name='detailView'),
 ]
