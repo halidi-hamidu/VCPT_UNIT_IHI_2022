@@ -6,5 +6,6 @@ from . import views
 app_name = 'vcptUnit_projects'
 
 urlpatterns = [
-    path('', views.projectPage, name='projectPage')
+    path('', views.projectPage, name='projectPage'),
+    path('project-detail/<str:proj_year>/', views.projectDetailPage, name='projectDetailPage')
 ]

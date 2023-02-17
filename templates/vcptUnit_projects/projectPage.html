@@ -28,52 +28,70 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="inner_section">
-                    <table id="project_list" class="table table-bordered" style="width:100%">
+                    <table id="publication_list" class="table table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th><ul class="nav nav-tabs">
+                                <th>
+                                    <ul class="nav nav-tabs">
+                                     {% if get_all_project  %}
                                     <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="#">2021</a>
+                                        <a class="nav-link active" aria-current="page" href="{% url 'vcptUnit_projects:projectPage'  %}">all</a>
                                     </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">2022</a>
+                                   {% for proj_year in distinct_year_in_list %}
+                                   <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="{% url 'vcptUnit_projects:projectDetailPage' proj_year  %}">{{proj_year}}</a>
                                     </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">2023</a>
-                                    </li>
+                                    {% endfor %}
+
                                     
-                                  </ul></th>
+                                    {% else %}
+                                    <li class="nav-item">
+                                        <a class="nav-link " aria-current="page" href="{% url 'vcptUnit_projects:projectPage'  %}">all</a>
+                                    </li>
+                                    {% for proj_year in distinct_year_in_list %}
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="{% url 'vcptUnit_projects:projectDetailPage' proj_year  %}">{{proj_year}}</a>
+                                        </li>
+                                    {% endfor %}
+                                    
+                                    {% endif %}
+                                 
+                                  
+                                   
+
+                                  </ul>
+                                </th>
                                 
                             </tr>
                         </thead>
                         <tbody>
-                           <tr>
-                            <td>1</td>
-                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
+                            {% if get_all_project %}
+                            {% for project in get_all_project %}
 
-                        </tr>
                            <tr>
-                            <td>1</td>
-                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
-
+                            <td>{{ forloop.counter }}</td>
+                            <td> {{ project.description | safe }}</td>
                             
                         </tr>
-                           <tr>
-                            <td>1</td>
-                            <td>halidi ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
+                        {% endfor %}
+                        {% endif %}
 
-                            
-                        </tr>
-                           <tr>
-                            <td>1</td>
-                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
+                        {% comment %} get_publication_from_specific_year {% endcomment %}
+                        {% if get_project_from_specific_year %}
+                        {% for project in get_project_from_specific_year %}
 
-                            
-                        </tr>
-                        </tbody>
+                       <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td> {{ project.description | safe }}</td>
                         
-                    </table>
+                    </tr>
+                    {% endfor %}
+                    {% endif %}    
+                    </tbody>
+                        
+                </table>
                 </div>
             </div>
         </div>

@@ -29,54 +29,78 @@
             <div class="col-md-12">
                 <div class="inner_section">
                     <div class="heading_section text-center">
-                        <h3>VCPTU (AUTHORS IN BOLD) PUBLICATIONS 2022</h3>
+                        {% if get_all_publication %}
+                        <h3>VCPTU (AUTHORS IN BOLD) ALL PUBLICATIONS</h3>
+                       {% endif %}
+                       {% if pub_year %}
+                        <h3>VCPTU (AUTHORS IN BOLD) {{pub_year}} PUBLICATIONS</h3>
+
+                        {% endif %}
                     </div>
                     <table id="publication_list" class="table table-bordered" style="width:100%">
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th><ul class="nav nav-tabs">
+                                <th>
+                                    <ul class="nav nav-tabs">
+                                     {% if get_all_publication  %}
                                     <li class="nav-item">
-                                      <a class="nav-link active" aria-current="page" href="#">2021</a>
+                                        <a class="nav-link active" aria-current="page" href="#">all</a>
                                     </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">2022</a>
+                                   {% for publication_year in distinct_year_in_list %}
+                                   <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="{% url 'vcptUnit_publication:publicationPageDetail' publication_year  %}">{{publication_year}}</a>
                                     </li>
-                                    <li class="nav-item">
-                                      <a class="nav-link" href="#">2023</a>
-                                    </li>
+                                    {% endfor %}
+
                                     
-                                  </ul></th>
+                                    {% else %}
+                                    <li class="nav-item">
+                                        <a class="nav-link " aria-current="page" href="{% url 'vcptUnit_publication:publicationPage'  %}">all</a>
+                                    </li>
+                                    {% for publication_year in distinct_year_in_list %}
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="{% url 'vcptUnit_publication:publicationPageDetail' publication_year  %}">{{publication_year}}</a>
+                                        </li>
+                                    {% endfor %}
+                                    
+                                    {% endif %}
+                                 
+                                  
+                                   
+
+                                  </ul>
+                                </th>
                                 
                             </tr>
                         </thead>
                         <tbody>
+                            {% if get_all_publication %}
+                            {% for publication in get_all_publication %}
+
                            <tr>
-                            <td>1</td>
-                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
+                            <td>{{ forloop.counter }}</td>
+                            <td> {{ publication.description | safe }}</td>
                             
                         </tr>
-                           <tr>
-                            <td>1</td>
-                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
-                       
-                            
-                        </tr>
-                           <tr>
-                            <td>1</td>
-                            <td>halidi ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
-                            
-                            
-                        </tr>
-                           <tr>
-                            <td>1</td>
-                            <td>Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Dolore, distinctio!</td>
-                            
-                            
-                        </tr>
-                        </tbody>
+                        {% endfor %}
+                        {% endif %}
+
+                        {% comment %} get_publication_from_specific_year {% endcomment %}
+                        {% if get_publication_from_specific_year %}
+                        {% for publication in get_publication_from_specific_year %}
+
+                       <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td> {{ publication.description | safe }}</td>
                         
-                    </table>
+                    </tr>
+                    {% endfor %}
+                    {% endif %}    
+                    </tbody>
+                        
+                </table>
                 </div>
             </div>
         </div>
