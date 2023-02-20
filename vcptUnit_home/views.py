@@ -3,16 +3,19 @@ from django import template
 from django.conf import settings
 from vcptUnit_news.models import VcptuNews
 from vcptUnit_publication.models import VcptuPublications
+from vcptUnit_team.models import VcptuTeamModal
 # Create your views here.
 
 
 def homePage(request):
     get_latest_publication = VcptuPublications.objects.all().order_by('updated_at')[:2]
     get_latest_news_or_latest_events = VcptuNews.objects.all().order_by('updated_at')[:3]
+    get_core_managements_team = VcptuTeamModal.objects.filter(unity_category = 'Core Management Team')
     template_name = 'vcptUnit_home/homePage.html'
     context = {
         'CURRENT_YEAR': settings.CURRENT_YEAR,
         'get_latest_news_or_latest_events':get_latest_news_or_latest_events,
-        'get_latest_publication':get_latest_publication
+        'get_latest_publication':get_latest_publication,
+        'get_core_managements_team':get_core_managements_team
     }
     return render(request, template_name, context)

@@ -5,11 +5,19 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class VcptuTeamModal(models.Model):
+    UNIT_CATEGORY = (
+        ('', 'Select Staff Tilte'),
+        ('Core Management Team', 'Core Management Team'),
+        ('Technicians', 'Technicians'),
+        ('Data managers', 'Data managers'),
+        ('Administrative officers', 'Administrative officers')
+    )
     id = models.UUIDField(
         primary_key=True, default=uuid.uuid4, editable=False, unique=True)
     staff_image = models.ImageField(upload_to='media/')
     staff_name = models.CharField(max_length= 100, null=True, blank=True)
     professional_or_title = models.CharField(max_length=100,null=True, blank=True)
+    unity_category = models.CharField(max_length=100, null=True, blank=True, choices=UNIT_CATEGORY)
     profile_descriptions = RichTextField()
     posted_by = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='staff_profile_content_posted_by')
