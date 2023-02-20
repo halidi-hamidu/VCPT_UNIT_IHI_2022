@@ -39,16 +39,18 @@
           <div class="inner_staff_list">
             {% if get_core_managements_team %}
             {% for staff in get_core_managements_team %}
-            <div class="staff" data-aos="zoom-in-up">
-              <div class="image_section">
-                <img src="{{ staff.staff_image.url }}" alt="" class="img-fluid">
+            <a>
+              <div class="staff" data-aos="zoom-in-up">
+                <div class="image_section">
+                  <img src="{{ staff.staff_image.url }}" alt="" class="img-fluid">
+                </div>
+                <div class="staff_title">
+                  <h5>{{staff.staff_name}}</h5>
+                  <h5>{{staff.professional_or_title}}</h5>
+                
+                </div>
               </div>
-              <div class="staff_title">
-                <h5>{{staff.staff_name}}</h5>
-                <h5>{{staff.professional_or_title}}</h5>
-              
-              </div>
-            </div>
+            </a>
             {% endfor %}
             {% endif %}
         </div>
