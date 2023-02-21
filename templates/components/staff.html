@@ -14,8 +14,10 @@
                 <img src="{{ staff.staff_image.url }}" alt="" class="img-fluid">
               </div>
               <div class="staff_title">
-                <h5>{{staff.staff_name}}</h5>
+                <a  href="{% url 'vcptUnit_team:detailView' staff.id  %}" style ="text-decoration:none;color:#000;">
+                  <h5>{{staff.staff_name}}</h5>
                 <h5>{{staff.professional_or_title}}</h5>
+                </a>
               
               </div>
             </div>
@@ -45,8 +47,10 @@
                   <img src="{{ staff.staff_image.url }}" alt="" class="img-fluid">
                 </div>
                 <div class="staff_title">
-                  <h5>{{staff.staff_name}}</h5>
+                  <a  href="{% url 'vcptUnit_team:detailView' staff.id  %}" style ="text-decoration:none;color:#000;">
+                    <h5>{{staff.staff_name}}</h5>
                   <h5>{{staff.professional_or_title}}</h5>
+                  </a>
                 
                 </div>
               </div>
