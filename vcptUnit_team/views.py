@@ -15,3 +15,11 @@ def detailView(request):
 
     }
     return render(request, template_name, context)
+
+
+def SaraahMooredetailView(request):
+    template_name = 'vcptUnit_team/SaraahMooredetailView.html'
+    context = {
+
+    }
+    return render(request, template_name, context)

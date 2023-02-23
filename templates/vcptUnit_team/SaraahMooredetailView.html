@@ -1,0 +1,32 @@
+{% extends '../baseTemplates/websiteBase.html' %}
+{% load static %}
+{% block title %} Team {% endblock %}
+{% block content %}
+<div class="connt">
+    <div class="detail_view_section" style="height:100vh;position:sticky;top:120px;bottom:0px;margin:-50px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner_section">
+                        <div class="image_section">
+                            <h1 style="background-color: white;padding-bottom: 20px;color:green;">Dr Sarah Moore</h1>
+                            <img src="{% static './images/staff/Dr -saraah.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <h2>Head of unit</h2>
+                            <p style="padding: 10px 0px;line-height: 30px;">Dr Sarah Moore has .........pment background and also skills in data science. He holds a BSc Degree in Information Systems and Network Engineering from St. Joseph University in Tanzania. Currently, he is working as a Research Officer with the Data Systems Unit and also with Data Science Capacity Building project at Ifakara Health Institute.</p>
+                            <p style="padding: 10px 0px;line-height: 30px;">Dr Sarah Moore begin his ...... data management and analysis career at IHI in 2012 as an intern and later on in 2015, after obtaining his first degree, he was employed as Data Officer. He has extensive experience in database designing and management in (MSAcess, MySQL Server, Apache). Mr. Mmbaga also has experience in software development (web and mobile applications), and data analysis using different platforms such as Stata and R.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ff" style="position:static;z-index:0;display:none">
+        {% include '../components/footer.html' %}
+    </div>
+</div>
+
+{% endblock %}
