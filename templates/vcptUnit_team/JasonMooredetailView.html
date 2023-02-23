@@ -1,0 +1,39 @@
+{% extends '../baseTemplates/websiteBase.html' %}
+{% load static %}
+{% block title %} Team {% endblock %}
+{% block content %}
+<div class="connt">
+    <div class="detail_view_section" style="height:100vh;position:sticky;top:120px;bottom:0px;margin:-50px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner_section">
+                        <div class="image_section" style="background-color:white">
+                            <h1 style="background-color: white;padding-bottom: 20px;color:green;">Jason Moore</h1>
+                            <img src="{% static './images/staff/jasonMoore.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <h2>Test Facility Manager</h2>
+                            <p style="padding: 10px 0px;line-height: 30px;">Jason Moore is currently the Test Facility Manager for the GLP accredited vector control
+								product testing unit of Ifakara Health Institute. The units evaluates new vector control tools
+								for pre-qualification by the World Health Organization and conducts Research and
+								Development for industry and other consortiums. He has also been involved in large phase
+								III studies assessing the functional life of Long Lasting Insecticidal Nets which have led to a
+								greater understanding of future product profiles and policy review. He has as part of a team,
+								.</p>
+                            <p style="padding: 10px 0px;line-height: 30px;">worked on the development of new assays and facilities used in research at Ifakara Health
+								Institute and several other African countries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ff" style="position:static;z-index:0;display:none">
+        {% include '../components/footer.html' %}
+    </div>
+</div>
+
+{% endblock %}

@@ -23,3 +23,17 @@ def SaraahMooredetailView(request):
 
     }
     return render(request, template_name, context)
+
+def JasonMooredetailView(request):
+    template_name = 'vcptUnit_team/JasonMooredetailView.html'
+    context = {
+
+    }
+    return render(request, template_name, context)
+
+def swaiDetailView(request):
+    template_name = 'vcptUnit_team/swaiDetailView.html'
+    context = {
+
+    }
+    return render(request, template_name, context)

@@ -1,0 +1,42 @@
+{% extends '../baseTemplates/websiteBase.html' %}
+{% load static %}
+{% block title %} Team {% endblock %}
+{% block content %}
+<div class="connt">
+    <div class="detail_view_section" style="height:100vh;position:sticky;top:120px;bottom:0px;margin:-50px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner_section">
+                        <div class="image_section" style="background-color:white">
+                            <h1 style="background-color: white;padding-bottom: 20px;color:green;">Kyeba Swai</h1>
+                            <img src="{% static './images/staff/Swai-Kyeba.jpg' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="description">
+                            <h2>Study Coordinator</h2>
+                            <p style="padding: 10px 0px;line-height: 30px;">Kyeba Swai is a result-driven medical entomologist with ten years of accumulated experience in
+								conducting and supervising semi-field and field studies collecting entomological data and its
+								analysis. He is currently registered for a PhD and works at the Vector Control Product Testing Unit
+								(VCPTU) primarily leading the evaluations on spatial repellents but also supports phase II
+								(experimental hut) evaluations of long-lasting insecticidal nets. Before joining VCPTU, he led
+								several research projects in south eastern Tanzania including, a malaria prevalence survey across
+								several villages of Ulanga district and on a project that aimed to develop low-cost and portable
+								mosquito-proof houses to protect migratory rice farmers from mosquito-borne illnesses. He is
+								interested in the control of vector borne diseases, specifically in understanding the role of migratory
+								livelihoods in maintaining the transmission of malaria. He is keen on developing research agendas
+								that incorporate this aspect as well as the development and evaluation of novel mosquito control
+								tools, particularly those that can be used by migratory communities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ff" style="position:static;z-index:0;display:none">
+        {% include '../components/footer.html' %}
+    </div>
+</div>
+
+{% endblock %}
