@@ -2,25 +2,12 @@
 {% load static %}
 {% block title %} news {% endblock %}
 {% block content %}
-<!-- <div class="accreditation_section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-10 offset-md-1" data-aos="zoom-in">
-                <div class="inner_section" data-aos = 'zoom-out-up'>
-                    <h1>VCPTU NEWS</h1>
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 <div class="section_for_news">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <!-- <h2>Latest news</h2> -->
-                <div class="inner_section" data-aos = 'zoom-out-up'>
-                   
+                <div class="inner_section" data-aos = 'zoom-out-up'>  
+
                     <div class="image_section">
                         <img src="{% static './images/Vector_Control_team_donates_to_Chalinze_schools_-_featured_photo_UaicAui.jpg' %}" alt="" class="img-fluid">
                     </div>
@@ -33,20 +20,7 @@
                             <button class=""  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               Read more
                             </button>
-                            {% comment %} <button class=""  type="button" >
-                              <img src="{% static './images/heart.png' %}" alt=""  class="img-fluid" style="">
-                            </button>
-                            <button class=""  type="button" >
-                                <img src="{% static './images/like.png' %}" alt="" class="img-fluid" style="width: 30px;padding-top: 10px;">
-                            </button>
-                            <button class=""  type="button"  >
-                            <img src="{% static './images/download.png' %}"  alt="" class="img-fluid" style="width: 30px;padding-top: 10px;">
-                                
-                            </button>
-                            <button class=""  type="button" >
-                                <img src="{% static './images/share.png' %}" alt="" class="img-fluid" style="width: 30px;padding-top: 10px;">
 
-                            </button> {% endcomment %}
                           </h2>
                           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
@@ -55,9 +29,10 @@
                           </div>
                         </div>
                     </div>
-                <div class="other_news" >
-                   
+                
+                    <div class="other_news" >
 
+                    
                         <a href="{% url 'vcptUnit_news:detailaViewPage' %}" class="link">
                             <div class="inner_section" data-aos = 'zoom-out-up'>
                                 <div class="image_section" style="width:490px;height:250px">
@@ -72,66 +47,7 @@
                                 </div>
                             </div>
                         </a>
-                    
-                    {% comment %} <a   href="{% url 'vcptUnit_news:headOfVectorControlDetailaViewPage' %}" class="link">
-                        <div class="inner_section" data-aos = 'zoom-out-up' >
-                            <div class="image_section">
-                                <img src="{% static './images/events.jpeg' %}" alt="" class="img-fluid" style="width:100%;height:100%">
-                            </div>
-                            <div class="description">
-                                <h3>Head of Vector Control from NMCP</h3>
-                                <p>Head of Vector Control from National Malaria Control Programme (NMCP)  visited Vector Control and Product Testing Unit in bagamoyo
-                                </p>
-                                <p class="read_more">Read more</p>
-                            </div>
-                        </div>
-                    </a> {% endcomment %}
-                    {% comment %} <a href="" class="link">
-                        <div class="inner_section" data-aos = 'zoom-out-up' >
-                            <div class="image_section" >
-                                <img src="{% static './images/vcptu_bg.jpg' %}" alt="" class="img-fluid">
-                            </div>
-                            <div class="description">
-                                <h3>News Heading</h3>
-    
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
-                                </p>
-                                <p class="read_more">Read more</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="" class="link">
-                        <div class="inner_section" data-aos = 'zoom-out-up' >
-                            <div class="image_section" >
-                                <img src="{% static './images/images.jpg' %}" alt="" class="img-fluid">
-                            </div>
-                            <div class="description">
-                                <h3>News Heading</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
-                                </p>
-                               
-                                <p class="read_more">Read more</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="" class="link">
-                        <div class="inner_section" data-aos = 'zoom-out-up'>
-                            <div class="image_section">
-                                <img src="{% static './images/project.jpg' %}" alt="" class="img-fluid">
-                            </div>
-                            <div class="description">
-                                <h3>News Heading</h3>
-                                
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, pariatur neque quae ducimus excepturi animi soluta, dolor repudiandae architecto hic, voluptatibus ab. Eligendi, commodi cumque. Quae dolore eius rem debitis!
-                                
-                                </p>
-                                <p class="read_more">Read more</p>
-                            </div>
-                            
-                        </div>
-                    </a>
-                </div> {% endcomment %}
-                </div>
+                    </div>
             </div>
         </div>
     </div>
