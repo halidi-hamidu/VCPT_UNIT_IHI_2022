@@ -31,6 +31,7 @@ urlpatterns = [
     path('vcptu-news', include('vcptUnit_news.urls', namespace='vcptUnit_news')),
     # path('vcptu-reports', include('vcptUnit_reports.urls', namespace='vcptUnit_reports')),
     path('vcptu-team', include('vcptUnit_team.urls', namespace='vcptUnit_team')),
+    path('vcptu-gallery', include('vcptUnit_gallery.urls', namespace='vcptUnit_gallery')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,

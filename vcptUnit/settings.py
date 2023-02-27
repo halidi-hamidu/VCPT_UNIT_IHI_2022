@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'vcptUnit_news',
     # 'vcptUnit_reports',
     'vcptUnit_team',
+    'vcptUnit_gallery',
 ]
 
 MIDDLEWARE = [
