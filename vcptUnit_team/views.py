@@ -37,3 +37,17 @@ def swaiDetailView(request):
 
     }
     return render(request, template_name, context)
+
+def EmmanuelMbubaDetailView(request):
+    template_name = 'vcptUnit_team/EmmanuelMbubaDetailView.html'
+    context = {
+
+    }
+    return render(request, template_name, context)
+
+def RosePhilipoDetailView(request):
+    template_name = 'vcptUnit_team/RosePhilipoDetailView.html'
+    context = {
+
+    }
+    return render(request, template_name, context)

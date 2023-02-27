@@ -8,4 +8,5 @@ app_name = 'vcptUnit_news'
 urlpatterns = [
     path('', views.newsPage, name='newsPage'),
     path('detail-view', views.detailaViewPage, name='detailaViewPage'),
+    path('detail-view-head-of-control', views.headOfVectorControlDetailaViewPage, name='headOfVectorControlDetailaViewPage'),
 ]

@@ -12,3 +12,9 @@ def detailaViewPage(request):
     context = {
     }
     return render(request, template_name, context)
+
+def headOfVectorControlDetailaViewPage(request):
+    template_name = 'vcptUnit_news/headOfVectorControlDetailaViewPage.html'
+    context = {
+    }
+    return render(request, template_name, context)
