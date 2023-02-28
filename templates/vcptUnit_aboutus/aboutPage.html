@@ -1,4 +1,4 @@
-{% extends  '../baseTemplates/websiteBase.html' %}
+{% extends '../baseTemplates/websiteBase.html' %}
 {% load static %}
 {% block title %} about-us{% endblock %}
 {% block content %}
@@ -12,28 +12,96 @@
         <div class="row">
             <div class="col-md-6" style="padding: 0px;" data-aos='zoom-out-up'>
                 <!-- <img src="{% static './images/mission.jpg' %}" alt="" class="img-fluid"> -->
-                <div class="inner_section_mission"  style="height:520px">
+                <div class="inner_section_mission" style="height:520px">
                     <h1>Vcptu Mission</h1>
                     <p>Our mission is to bring new vector control products to market more rapidly and cost-efficiently through the conduct of rigorous evaluations using well powered studies, enhanced research standards, and careful data analysis. At the same time, we are dedicated to building capacity in entomology for the future of vector control.</p>
                 </div>
             </div>
             <div class="col-md-6" style="padding: 0px;" data-aos='zoom-out-up'>
                 <div class="inner_section" style="height:520px">
-                    <h1>Strategy for 2022</h1>
-                    <ul>
-                        <li>Maintain GLP to attract high value studies <strong>– Delivered March 2022</strong></li>
-                        <li>Increase international peer reviewed publications per student to minimum 1 per student / year to increase international visibility– <strong>On Target.</strong></li>
-                        <li>Maintain 1 PhD graduate per year to ensure institutional growth – On Target.</li>
-                        <li>Focus business on preferred client base (high commercial / scientific value) – Delivered to 2023.</li>
-                        <li>Build 18 more huts for new IRS trials to increase capacity – Delivered.</li>
-                        <li>Build BSL3 semi-field system to grow range of studies that can be undertaken – Delivered.</li>
-                        <li>Increase scope to include space sprays – Delivered, 1 trial secured.</li>
-                        <li>Increase scope to include larvicide – Delivered, 1 trial secured.</li>
-                        <li>Obtain core funding – Partially delivered: one grant obtained ($300k) and one applied for ($2.7 million)</li>    
-                        <li>Focus on improvement of project delivery.</li>
-                        <li>Support development of new platforms in dengue vector ecology and malaria transmission studies.</li>
-                        
-                    </ul>
+                    <div class="items">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button text-decoration-none bg-success text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        1. We test for indoor residual spraying (IRS)...
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>1. We test for indoor residual spraying (IRS), insecticidal treated nets (ITNs), skin (topical) repellents, spatial (area) repellents, treated clothing, attractive targeted sugar baits and mosquito lures.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button text-decoration-none bg-success text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        2. We develop new means of testing products and ...
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>2. We develop new means of testing products and assist in developing guidelines for international use.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button text-decoration-none bg-success text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        3. We measure key parameters in the mosquito that ...
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong> 3. We measure key parameters in the mosquito that translate to efficacy in reducing vector borne disease in the human population when applied at scale.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfour">
+                                    <button class="accordion-button text-decoration-none bg-success text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                        4. Our documentation, analysis and reporting
+                                    </button>
+                                </h2>
+                                <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong> 4. Our documentation, analysis and reporting is rigorous for ease of use by our partners.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingfive">
+                                    <button class="accordion-button text-decoration-none bg-success text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                        5. We offer protocol, data analysis and ...
+                                    </button>
+                                </h2>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong> We offer protocol, data analysis and report writing services.</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="service_list">
+                            <div class="image_section">
+                                <img src="{% static './images/process.png' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <p>1. We test for indoor residual spraying (IRS), insecticidal treated nets (ITNs), skin (topical) repellents, spatial (area) repellents, treated clothing, attractive targeted sugar baits and mosquito lures.</p>
+                            </div>
+                        </div>
+                        <div class="service_list">
+                            <div class="image_section">
+                                <img src="{% static './images/process.png' %}" alt="" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <p>2. We develop new means of testing products and assist in developing guidelines for international use.
+                                </p>
+                            </div>
+                        </div> -->
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -51,9 +119,9 @@
                     <h5 style="text-decoration: none;border: 0px;">method</h5>
                     <div class="descriptions">
                         <p>We use standard WHO testing methodology (Phase I: laboratory studies, Phase II: experimental hut studies, and Phase III: community studies) for long lasting insecticidal nets and Indoor residual spray (IRS).</p>
-                        {% comment %} <a href="" class="readmore">Read more</a> {% endcomment %}
 
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -65,7 +133,7 @@
                     <h5>Good Laboratory Practice</h5>
                     <div class="descriptions">
                         <p>With increasing insecticide resistance in malaria-endemic countries there is an urgent need for safe and effective novel vector control products. These tools require generation of rigorous efficacy data. </p>
-                        {% comment %} <a href="" class="readmore">Read more</a> {% endcomment %}
+
                     </div>
                 </div>
             </div>
@@ -77,23 +145,23 @@
                     <h5>Business model</h5>
                     <div class="descriptions">
                         <p>In addition to achieving GLP, the VCPTU in collaboration with IHI Grants and Finance departments has developed a business model that provides a high throughput, frictionless service for clients that encourages repeat business. </p>
-                        {% comment %} <a href="" class="readmore">Read more</a> {% endcomment %}
+
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="inner" data-aos='zoom-out-up'>
                     <div class="icon">
-                        <img src="{% static './images/training.png' %}" alt="icon"  class="img-fluid">
+                        <img src="{% static './images/training.png' %}" alt="icon" class="img-fluid">
                     </div>
                     <h5>Training</h5>
                     <div class="descriptions">
                         <p>The VCPTU generates large amounts of data, which provides numerous training opportunities. Currently, six PhD candidates are using product testing data as the basis of their research degrees.
 
-                        The unit is funding four PhDs
+                            The unit is funding four PhDs
                         </p>
-                        {% comment %} <a href="" class="readmore">Read more</a> {% endcomment %}
-                        
+
+
                     </div>
                 </div>
             </div>
@@ -119,4 +187,3 @@
 {% include '../components/footer.html' %}
 
 {% endblock %}
-
