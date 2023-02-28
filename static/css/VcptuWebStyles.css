@@ -1117,7 +1117,7 @@ border-radius: 10px;
     margin-top: 40px;
   }
 .contact_section .col-md-6 .image_section{
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('../images/vcptu_bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/vcptu_bg.jpg');
   background-position: var(--center);
   background-repeat: no-repeat;
   background-size: cover;
@@ -2276,7 +2276,7 @@ height: 100%;
     margin-top: 40px;
   }
 .contact_section .col-md-6 .image_section{
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('../images/vcptu_bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/vcptu_bg.jpg');
   background-position: var(--center);
   background-repeat: no-repeat;
   background-size: cover;
@@ -3443,7 +3443,7 @@ height: 100%;
     margin-top: 40px;
   }
 .contact_section .col-md-6 .image_section{
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('../images/vcptu_bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../images/vcptu_bg.jpg');
   background-position: var(--center);
   background-repeat: no-repeat;
   background-size: cover;
