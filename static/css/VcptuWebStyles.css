@@ -3289,7 +3289,7 @@ height: 100%;
   }
   .team_gallarey .inner_section{
     background-color: var(--whiteColor);
-    padding: 10px;
+    padding: 0px;
     text-align: var(--center);
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
