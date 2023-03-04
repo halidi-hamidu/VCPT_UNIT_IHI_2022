@@ -958,14 +958,14 @@ border-radius: 10px;
   }
   .team_gallarey .inner_section{
     background-color: var(--whiteColor);
-    padding: 10px;
+    padding: 0px;
     text-align: var(--center);
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   
   }
   .team_gallarey .inner_section .image_section{
-    width: 80%;
+    width: 100%;
     /* border-radius: 100%; */
     border: 1px var(--solidLIne) var(--whiteColor);
     margin: 0px auto;
@@ -3296,7 +3296,7 @@ height: 100%;
   
   }
   .team_gallarey .inner_section .image_section{
-    width: 80%;
+    width: 100%;
     /* border-radius: 100%; */
     border: 1px var(--solidLIne) var(--whiteColor);
     margin: 0px auto;
